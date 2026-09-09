@@ -15,7 +15,8 @@ hr{
 #board{
     width: 450px;
     height: 450px;
-    background-color: #7311bf;
+    display: flex;
+    background-color: #e4c9f9;
     margin: 0 auto;
     flex-wrap: wrap;
 }
@@ -23,7 +24,7 @@ hr{
 .tile{
     width:48px;
     height:48px;
-    border: 1px solid black;
+    border: 1px solid rgb(137, 134, 231);
 
     /*text*/
     font-size: 20px;
@@ -36,21 +37,37 @@ hr{
 #digits{
     width:450px;
     height:50px;
-    background-color: #7311bf;
+    background-color: #e4c9f9;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 .number{
-    width:48px;
-    height:48px;
-    border: 1px solid rgb(35, 28, 225);
-
+    width:44px;
+    height:44px;
+    border: 1px solid rgb(64, 58, 245);
+    margin: 2px;
     /*text*/
     font-size: 20px;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.number-selected{
+    background-color: rgb(110, 106, 241);
+}
+
+.tile-start{
+    background-color: rgb(176, 150, 242);
+}
+
+.horizontal-line {
+    border-bottom: 2px solid rgb(64, 58, 245);
+}
+
+.vertical-line {
+    border-right: 2px solid rgb(64, 58, 245);
 }
